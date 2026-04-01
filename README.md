@@ -1,27 +1,16 @@
-Here is the translation of your API documentation into English:
-
 🎬 Movie Review and Favorites List API
 This project is a RESTful API developed using the Flask framework. Users can register, log in, review movies, add movies to their favorites, and manage their profiles.
 
 🚀 Features
 ✅ User registration and login (JWT-based authentication)
-
 👤 Profile viewing and updating
-
 🔒 Password changing
-
 🎥 Movie listing, searching, and detail viewing
-
 📝 Adding, editing, and listing reviews
-
 ⭐ Adding, listing, and removing favorite movies
-
 📚 Listing categories
-
 🔐 CORS and bcrypt encryption support
-
 🛑 Global error handling
-
 📡 API Endpoints
 🧑 User Operations
 POST /api/users/register → User registration
