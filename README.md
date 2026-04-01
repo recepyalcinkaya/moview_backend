@@ -1,51 +1,59 @@
-# 🎬 Film İnceleme ve Favori Listesi API
+Here is the translation of your API documentation into English:
 
-Bu proje, Flask framework'ü kullanılarak geliştirilmiş bir RESTful API'dir. Kullanıcılar kayıt olabilir, giriş yapabilir, filmleri inceleyebilir, favorilerine film ekleyebilir ve kendi profillerini yönetebilirler.
+🎬 Movie Review and Favorites List API
+This project is a RESTful API developed using the Flask framework. Users can register, log in, review movies, add movies to their favorites, and manage their profiles.
 
-## 🚀 Özellikler
+🚀 Features
+✅ User registration and login (JWT-based authentication)
 
-- ✅ Kullanıcı kayıt ve giriş (JWT tabanlı kimlik doğrulama)
-- 👤 Profil görüntüleme ve güncelleme
-- 🔒 Parola değiştirme
-- 🎥 Film listeleme, arama ve detay görüntüleme
-- 📝 İnceleme ekleme, düzenleme ve listeleme
-- ⭐ Favorilere film ekleme, listeleme ve silme
-- 📚 Kategorileri listeleme
-- 🔐 CORS ve bcrypt şifreleme desteği
-- 🛑 Global hata yönetimi
+👤 Profile viewing and updating
 
-📡 API Uç Noktaları
-🧑 Kullanıcı İşlemleri
-POST /api/users/register → Kullanıcı kaydı
+🔒 Password changing
 
-POST /api/users/login → Giriş
+🎥 Movie listing, searching, and detail viewing
 
-GET /api/users/me → Bilgileri al (JWT gerekli)
+📝 Adding, editing, and listing reviews
 
-PUT /api/users/profile → Profil güncelle (JWT gerekli)
+⭐ Adding, listing, and removing favorite movies
 
-PUT /api/users/password → Parola değiştir (JWT gerekli)
+📚 Listing categories
 
-🎞️ Filmler
-GET /api/movies → Tüm filmleri listele
+🔐 CORS and bcrypt encryption support
 
-GET /api/movies/<movie_id> → Film detayları ve incelemeleri
+🛑 Global error handling
 
-GET /api/movies/search?q=<arama> → Film adına göre arama
+📡 API Endpoints
+🧑 User Operations
+POST /api/users/register → User registration
 
-📝 İncelemeler
-POST /api/reviews → İnceleme ekle (JWT gerekli)
+POST /api/users/login → Login
 
-PUT /api/reviews/<review_id> → İnceleme güncelle (JWT gerekli)
+GET /api/users/me → Get user info (JWT required)
 
-GET /api/reviews → Tüm incelemeleri listele
+PUT /api/users/profile → Update profile (JWT required)
 
-⭐ Favoriler
-POST /api/favorites → Favoriye ekle (JWT gerekli)
+PUT /api/users/password → Change password (JWT required)
 
-GET /api/favorites → Favorileri getir (JWT gerekli)
+🎞️ Movies
+GET /api/movies → List all movies
 
-DELETE /api/favorites/<favorite_id> → Favoriden çıkar (JWT gerekli)
+GET /api/movies/<movie_id> → Movie details and reviews
 
-📚 Kategoriler
-GET /api/categories → Tüm kategorileri getir
+GET /api/movies/search?q=<query> → Search by movie name
+
+📝 Reviews
+POST /api/reviews → Add review (JWT required)
+
+PUT /api/reviews/<review_id> → Update review (JWT required)
+
+GET /api/reviews → List all reviews
+
+⭐ Favorites
+POST /api/favorites → Add to favorites (JWT required)
+
+GET /api/favorites → Get favorites (JWT required)
+
+DELETE /api/favorites/<favorite_id> → Remove from favorites (JWT required)
+
+📚 Categories
+GET /api/categories → Get all categories
